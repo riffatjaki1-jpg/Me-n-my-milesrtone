@@ -232,10 +232,15 @@ export function SolarSystemView({ paused, onBack, onInteractBody }: SolarSystemV
     );
     camera.position.set(0, 220, 480);
 
-    const renderer = new THREE.WebGLRenderer({
-      antialias: !isSoftwareGl,
-      powerPreference: 'high-performance',
-    });
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({
+        antialias: !isSoftwareGl,
+        powerPreference: 'high-performance',
+      });
+    } catch {
+      return;
+    }
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.setPixelRatio(isSoftwareGl ? 1 : Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);

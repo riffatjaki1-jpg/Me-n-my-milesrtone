@@ -587,11 +587,16 @@ export function EarthCanvas({
     );
     camera.position.set(0, 0, 5.8);
 
-    const renderer = new THREE.WebGLRenderer({
-      antialias: !isSoftwareGl,
-      alpha: true,
-      powerPreference: 'high-performance',
-    });
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({
+        antialias: !isSoftwareGl,
+        alpha: true,
+        powerPreference: 'high-performance',
+      });
+    } catch {
+      return;
+    }
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.setPixelRatio(isSoftwareGl ? 1 : Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);

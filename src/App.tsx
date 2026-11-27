@@ -97,17 +97,17 @@ const FEATURE_CARDS = [
 const SOCIAL_LOGOS = [
   {
     name: 'TikTok',
-    src: '/assets/aistudio/1000009010_c0cb072a.jpg',
+    src: './assets/aistudio/1000009010_c0cb072a.jpg',
     fitClass: 'object-cover',
   },
   {
     name: 'Instagram',
-    src: '/assets/aistudio/1000009011_bc83dd7f.jpg',
+    src: './assets/aistudio/1000009011_bc83dd7f.jpg',
     fitClass: 'object-cover',
   },
   {
     name: 'YouTube',
-    src: '/assets/aistudio/1000009008_52bfe0be.webp',
+    src: './assets/aistudio/1000009008_52bfe0be.webp',
     fitClass: 'object-contain p-2',
   },
 ];
@@ -337,7 +337,7 @@ export default function App() {
               <div className="pointer-events-auto bg-[#0d1424]/85 border border-white/10 rounded-2xl p-4 sm:p-5 shadow-[0_24px_60px_-15px_rgba(0,0,0,0.8)]">
                 <div className="overflow-hidden rounded-xl border border-white/10 bg-slate-950">
                   <img
-                    src="/assets/aistudio/1795819091127_abb4ab29.jpg"
+                    src="./assets/aistudio/1795819091127_abb4ab29.jpg"
                     alt="Riffat Zaki Arrabani"
                     referrerPolicy="no-referrer"
                     className="w-full aspect-[16/10] object-cover object-[50%_25%] block"
