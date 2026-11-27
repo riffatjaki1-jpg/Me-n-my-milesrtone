@@ -1,0 +1,8 @@
+{
+  "name": "Remix Ascend",
+  "description": "Scale Smarter, Not Harder — Revenue engine and funnel command center with interactive 3D Earth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

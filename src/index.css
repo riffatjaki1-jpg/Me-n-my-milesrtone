@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cosmos-bg: #03050c;
+    --cosmos-darker: #010206;
+    --mint-glow: #34d399;
+    --mint-bright: #6ee7b7;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--cosmos-bg);
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  body {
+    background: radial-gradient(circle at 50% 10%, #06152b 0%, var(--cosmos-bg) 70%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+}
+
+.font-mono-tabular {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
